@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>V Power Gym | Best Gym in Your City</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="V Power Gym is the best fitness gym offering personal training, weight loss and bodybuilding.">
+  <meta name="keywords" content="gym, fitness center, personal training, weight loss gym">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #111;
+      color: white;
+    }
+
+    header {
+      background: black;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1571019613578-2b19307c9c0c') center/cover;
+      display: flex;
+      align-items: center;
+      padding: 60px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: red;
+      border-radius: 5px;
+      color: white;
+    }
+
+    section {
+      padding: 60px;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    section img {
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      padding: 60px;
+    }
+
+    .card {
+      background: #222;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: black;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      section img {
+        width: 100%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h2>V Power Gym</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div>
+    <h1>Transform Your Body at V Power Gym</h1>
+    <p>Best fitness center for weight loss, strength and health.</p>
+    <a href="#contact" class="btn">Join Now</a>
+  </div>
+</div>
+
+<section id="about">
+  <div>
+    <h2>About Us</h2>
+    <p>
+      V Power Gym was founded to promote healthy lifestyle and fitness awareness.
+      We provide modern equipment, expert trainers and personalized workout plans.
+    </p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1">
+</section>
+
+<div class="cards" id="services">
+  <div class="card">Personal Training</div>
+  <div class="card">Weight Loss</div>
+  <div class="card">Bodybuilding</div>
+  <div class="card">Cardio Training</div>
+  <div class="card">Yoga & Zumba</div>
+  <div class="card">Nutrition Guidance</div>
+</div>
+
+<section id="contact">
+  <div>
+    <h2>Contact Us</h2>
+    <p>Address: Your Area, Your City</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+    <p>Email: vpowergym@gmail.com</p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1583454110551-21f9a6f5c4ab">
+</section>
+
+<footer>
+  © 2026 V Power Gym | All Rights Reserved
+</footer>
+
+</body>
+</html>
